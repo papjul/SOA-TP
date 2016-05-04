@@ -23,11 +23,11 @@
         <h1>Premier TP</h1>
         <p>Saisissez votre nom et les auteurs que vous appréciez.</p>
 
-        <form>
+        <form method="post" action="reponse.jsp">
             <label for="name">Nom : </label><input type="text" id="name" name="name" /><br />
-            <label for="victor_hugo">Victor Hugo</label> <input type="checkbox" name="victor_hugo" id="victor_hugo" /><br />
-            <label for="racine">Racine</label> <input type="checkbox" name="racine" id="racine" /><br />
-            <label for="marc_levy">Marc Levy</label> <input type="checkbox" name="marc_levy" id="marc_levy" /><br />
+            <label for="victor_hugo">Victor Hugo</label> <input type="radio" name="auteurs" id="victor_hugo" value="Racine" /><br />
+            <label for="racine">Racine</label> <input type="radio" name="auteurs" id="racine" value="Racine" /><br />
+            <label for="marc_levy">Marc Levy</label> <input type="radio" name="auteurs" id="marc_levy" value="Marc Levy" /><br />
             <input type="submit" value="Soumettre" />
         </form>
     </body>
