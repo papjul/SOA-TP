@@ -23,7 +23,7 @@
         <h1>Premier TP</h1>
         <p>Saisissez votre nom et les auteurs que vous appréciez.</p>
 
-        <form method="post" action="reponse.jsp">
+        <form method="post" action="reponse">
             <label for="name">Nom : </label><input type="text" id="name" name="name" /><br />
             <label for="victor_hugo">Victor Hugo</label> <input type="radio" name="auteurs" id="victor_hugo" value="Racine" /><br />
             <label for="racine">Racine</label> <input type="radio" name="auteurs" id="racine" value="Racine" /><br />
