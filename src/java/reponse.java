@@ -4,18 +4,14 @@
  * and open the template in the editor.
  */
 
+import bean.ReponseBean;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author yurienu
- */
 @WebServlet(urlPatterns = {"/reponse"})
 public class reponse extends HttpServlet {
 
@@ -39,7 +35,7 @@ public class reponse extends HttpServlet {
 
         request.setAttribute("reponse", reponseBean);
 
-        request.getRequestDispatcher("/reponses.jsp").forward(request, response);
+        request.getRequestDispatcher("/reponse.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
